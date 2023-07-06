@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color:rgba(176, 223, 250, 0.836) ;
+}
+.contenedor{
+    background-color:rgba(216, 237, 250, 0.979) ;
+    padding: 60px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: 3px solid rgba(179, 164, 164, 0.322);
+}
+.titulo{
+    color: rgba(12, 12, 12, 0.692);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 800px;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff8f, #6dd4fa88, #297fb988),url(img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ffffff8f, #6dd4fa88, #297fb988),url(img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav a {
+    color: rgba(24, 23, 23, 0.932);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+header .texto-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.texto-header h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000ee;
+    padding: 50px;
+}
+.texto-header h2{
+    font-size: 25px;
+    font-weight: 300;
+    color: #000000e0;
+}
+/*Fin Header*/
+
+/*Nosotros*/
+.nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+.img-nosotros{
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+}
+.nosotros .texto-nosotros{
+    width: 60%;
+}
+.texto-nosotros h3{
+    margin-bottom: 15px;
+}
+.texto-nosotros h3 span{
+    background-color:rgba(181, 203, 216, 0.932);
+    color: rgba(0, 0, 0, 0.767);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.76);
+    margin-right: 6px;
+}
+.texto-nosotros p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/*Fin Nosotros*/
+
+/* Portafolio*/
+.portafolio{
+    background-color:rgba(216, 237, 250, 0.979) ;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.425);
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #3468c996;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img {
+    width: 50px;
+}
+.hover-galeria p {
+    color: #000;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+/* Fin Portafolio*/
+
+/*Clientes*/
+.contenedorclientes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+.contenedorclientes .cliente { 
+    background-color:rgba(171, 207, 230, 0.89) ;
+    display: flex;
+    width: 56%;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 black;
+}
+.cliente img {
+    width: 100px;
+    height: 100px;;
+    object-fit: cover;
+    border: 3px solid rgba(179, 164, 164, 0.322);
+    border-radius: 50%;
+    display: block;
+}
+.contenedorclientes .cliente > .texto-cliente{
+    width: 50%;
+    color: #3b3b38;
+}
+.contenedorclientes .cliente > .texto-cliente p {
+    font-weight: 300;
+    padding-top: 5px; 
+} 
+/*Fin Clientes*/
+
+/*Servicios*/
+.servicios{
+    background-color:rgba(216, 237, 250, 0.979) ;
+}
+.servicioinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.servicioindividual{
+    width: 60%;
+    height: 90%;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.712);
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.315);
+    overflow: hidden;
+    padding:10px; 
+}
+.servicioindividual h3{
+    margin: 10px 0;
+    border-bottom: 3px solid rgba(52, 52, 53, 0.205);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    text-align: center; 
+}
+.servicioindividual p{
+    font-weight: 300;
+    text-align: justify;
+}
+/*Fin Servicios*/
+
+/*Formulario*/
+.formulariocompleto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+form{
+    width: 40%;
+    height: 20%;
+    padding: 30px;
+    border: 2px solid rgba(70, 70, 70, 0.664);
+}
+form input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid rgba(65, 64, 64, 0.479);
+}
+
+form textarea{
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;     
+}
+.botonformulario {
+    border: 2px solid rgb(88, 88, 88);
+    box-shadow: 0 0 4px 0 rgb(54, 54, 54); 
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 300;
+}
+.info{
+    width: 50%;
+    height: 50%;
+    padding: 50px;
+    justify-content: space-between;
+}
+/* fin del formulario*/
+
+/*Footer*/
+footer {
+    background-color: #a1a1a1f5;
+    padding: 60px 0 30px 0;
+    text-align: center;
+    
+}
+.contenedorfooter{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid bisque;  
+}
+.texto-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+
+}
+.contenedorfooter a {
+    text-decoration: none;
+    transition: transform .5s;
+}
+.contenedorfooter a button{
+    background-color: #1a17174b;
+    cursor: pointer; 
+    padding: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #00000083; 
+    border-radius: 20px; 
+    box-shadow: #3b3b38;
+    
+}
+
+.titulofooter{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #2424226c;
+}
+/*Fin Footer*/
+
