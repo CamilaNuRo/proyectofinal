@@ -308,3 +308,57 @@ footer {
 }
 /*Fin Footer*/
 
+/*Flexbox*/
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+    }
+    /*nosotros*/
+    .sobre-nosotros .nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .texto-nosotros {
+        width: 90%;
+    }
+    .img-nosotros{
+        width: 90%;
+    }
+    /*portafolio*/
+    .imagen-port {
+        width: 45%;
+    }
+    /*clientes*/
+    .contenedorclientes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorclientes .cliente {
+        width: 90%;
+    }
+    /*servicios*/
+    .servicios .servicioinfo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    /*formulario*/
+    
+    .formulariocompleto{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    .info{
+        width: 90%;
+    }
+    .info .texto-footer{
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+}
+/*fin flexbob*/
